@@ -1,0 +1,283 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/test_pro_bg.png" type="Texture" id=1]
+[ext_resource path="res://Dog1.gd" type="Script" id=2]
+[ext_resource path="res://assets/dog_walk1.png" type="Texture" id=3]
+[ext_resource path="res://Player.gd" type="Script" id=4]
+[ext_resource path="res://assets/icon.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 34.2955, 27.7806 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32.4379, 31.9872 )
+
+[node name="MainScene" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 534.549, 275.301 )
+scale = Vector2( 3.13819, 2.10121 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Dog1" type="Area2D" parent="."]
+position = Vector2( 273.595, 162.89 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Dog1"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dog1"]
+position = Vector2( 1.88989, 12.5992 )
+shape = SubResource( 1 )
+
+[node name="Layers" type="Label" parent="Dog1"]
+margin_left = -253.372
+margin_top = -59.9787
+margin_right = 259.628
+margin_bottom = -41.9787
+text = "aaaaaaaaaaa"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Masks" type="Label" parent="Dog1"]
+margin_left = -244.756
+margin_top = -41.2969
+margin_right = 247.244
+margin_bottom = -21.2969
+text = "bbbbbbbbb"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dog2" type="Area2D" parent="."]
+position = Vector2( 252.318, 442.744 )
+collision_layer = 0
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Dog2"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dog2"]
+position = Vector2( 1.88989, 12.5992 )
+shape = SubResource( 1 )
+
+[node name="Layers" type="Label" parent="Dog2"]
+margin_left = -253.372
+margin_top = -59.9787
+margin_right = 259.628
+margin_bottom = -41.9787
+text = "aaaaaaaaaaa"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Masks" type="Label" parent="Dog2"]
+margin_left = -244.756
+margin_top = -41.2969
+margin_right = 247.244
+margin_bottom = -21.2969
+text = "bbbbbbbbb"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dog3" type="Area2D" parent="."]
+position = Vector2( 560.68, 153.151 )
+collision_layer = 2
+collision_mask = 2147483650
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Dog3"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dog3"]
+position = Vector2( 1.88989, 12.5992 )
+shape = SubResource( 1 )
+
+[node name="Layers" type="Label" parent="Dog3"]
+margin_left = -253.372
+margin_top = -59.9787
+margin_right = 259.628
+margin_bottom = -41.9787
+text = "aaaaaaaaaaa"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Masks" type="Label" parent="Dog3"]
+margin_left = -244.756
+margin_top = -41.2969
+margin_right = 247.244
+margin_bottom = -21.2969
+text = "bbbbbbbbb"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dog4" type="Area2D" parent="."]
+position = Vector2( 557.338, 460.004 )
+collision_layer = 0
+collision_mask = 2
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Dog4"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dog4"]
+position = Vector2( 1.88989, 12.5992 )
+shape = SubResource( 1 )
+
+[node name="Layers" type="Label" parent="Dog4"]
+margin_left = -253.372
+margin_top = -59.9787
+margin_right = 259.628
+margin_bottom = -41.9787
+text = "aaaaaaaaaaa"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Masks" type="Label" parent="Dog4"]
+margin_left = -244.756
+margin_top = -41.2969
+margin_right = 247.244
+margin_bottom = -21.2969
+text = "bbbbbbbbb"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dog5" type="Area2D" parent="."]
+position = Vector2( 803.504, 152 )
+collision_layer = 4
+collision_mask = 4
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Dog5"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dog5"]
+position = Vector2( 1.88989, 12.5992 )
+shape = SubResource( 1 )
+
+[node name="Layers" type="Label" parent="Dog5"]
+margin_left = -253.372
+margin_top = -59.9787
+margin_right = 259.628
+margin_bottom = -41.9787
+text = "aaaaaaaaaaa"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Masks" type="Label" parent="Dog5"]
+margin_left = -244.756
+margin_top = -41.2969
+margin_right = 247.244
+margin_bottom = -21.2969
+text = "bbbbbbbbb"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dog6" type="Area2D" parent="."]
+position = Vector2( 801.125, 460.004 )
+collision_layer = 0
+collision_mask = 4
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Dog6"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dog6"]
+position = Vector2( 1.88989, 12.5992 )
+shape = SubResource( 1 )
+
+[node name="Layers" type="Label" parent="Dog6"]
+margin_left = -253.372
+margin_top = -59.9787
+margin_right = 259.628
+margin_bottom = -41.9787
+text = "aaaaaaaaaaa"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Masks" type="Label" parent="Dog6"]
+margin_left = -244.756
+margin_top = -41.2969
+margin_right = 247.244
+margin_bottom = -21.2969
+text = "bbbbbbbbb"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" type="Area2D" parent="."]
+position = Vector2( 432.076, 305.02 )
+collision_layer = 3
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="Player"]
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource( 2 )
+
+[node name="Layers" type="Label" parent="Player"]
+margin_left = -255.533
+margin_top = -62.2834
+margin_right = 257.467
+margin_bottom = -44.2834
+text = "aaaaaaaaaaa"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Masks" type="Label" parent="Player"]
+margin_left = -247.49
+margin_top = -46.8086
+margin_right = 244.51
+margin_bottom = -26.8086
+text = "bbbbbbbbb"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Detection" type="Label" parent="Player"]
+margin_left = -85.1008
+margin_top = 35.5514
+margin_right = 86.8992
+margin_bottom = 49.5514
+rect_pivot_offset = Vector2( 85.1447, 7.6889 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="area_entered" from="Player" to="Player" method="_on_Player_area_entered"]
+[connection signal="area_exited" from="Player" to="Player" method="_on_Player_area_exited"]
+[connection signal="mouse_entered" from="Player" to="Player" method="_on_Player_mouse_entered"]
+[connection signal="mouse_exited" from="Player" to="Player" method="_on_Player_mouse_exited"]
